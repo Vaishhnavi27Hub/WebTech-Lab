@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Change Background Color and Text</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+background-color: #f0f0f0; /* Default background
+color */
+transition: background-color 0.5s ease;
+}
+
+.light-green-background {
+background-color: lightgreen;
+}
+</style>
+</head>
+<body>
+<h1 id="heading">Original Heading</h1>
+<button id="changeButton">Change Background and
+Text</button>
+
+<script>
+// Alert before assigning class attribute
+alert("Before assigning class attribute");
+
+// JavaScript to change background color and text when
+//button is clicked
+
+document.getElementById('changeButton').addEventList
+ener('click', function() {
+// Alert after assigning class attribute
+alert("After assigning class attribute");
+
+// Assigning the class attribute to change the
+//background color
+
+document.body.classList.add('light-green-background');
+
+// Change the text of the heading
+
+document.getElementById('heading').textContent =
+'New Heading';
+});
+</script>
+</body>
+</html>
